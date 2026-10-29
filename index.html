@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Dashboard je osobní aplikace pro Windows. Spojuje vlastní plochy, úkoly, kalendář, zkratky a přehledy z připojených účtů.">
+  <meta name="theme-color" content="#173f36">
+  <title>Personal Dashboard — o aplikaci</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přejít k obsahu</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><img src="favicon.svg" width="34" height="34" alt=""><span>Personal Dashboard</span></a>
+    <nav aria-label="Hlavní navigace"><a href="index.html" aria-current="page">O aplikaci</a><a href="privacy.html">Soukromí</a><a href="terms.html">Podmínky</a></nav>
+  </header>
+  <main id="obsah" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span>Osobní aplikace pro Windows 11</p>
+        <h1 id="hero-title">Vlastní prostor<br>pro váš den.</h1>
+        <p class="lead">Personal Dashboard spojuje úkoly, kalendář, zkratky a užitečné přehledy do ploch, které si sestavíte podle sebe. Aplikace běží lokálně ve vašem počítači.</p>
+        <a class="text-link hero-link" href="#pripojeni">Jak fungují připojené služby <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="dashboard-preview" role="img" aria-label="Ilustrace vlastní plochy: pracovní a osobní záložka, hodiny, seznam úkolů, kalendář a zkratky. Jde o ukázkové údaje.">
+        <div class="preview-top"><span class="preview-brand"><span class="tiny-mark"></span>Váš přehled</span><span class="preview-window" aria-hidden="true">···</span></div>
+        <div class="preview-tabs"><span class="selected">Práce</span><span>Osobní</span><span aria-hidden="true">+</span></div>
+        <div class="preview-grid">
+          <div class="preview-clock"><span class="preview-label">Chvíle pro váš den</span><strong>09:41</strong><span>Čtvrtek · klidný začátek</span></div>
+          <div class="preview-tasks"><span class="preview-label">Dnes</span><span><i class="check done" aria-hidden="true"></i>Připravit plán</span><span><i class="check" aria-hidden="true"></i>Prostor na soustředění</span><span><i class="check" aria-hidden="true"></i>Čas na vlastní projekt</span></div>
+          <div class="preview-day"><span class="preview-label">Kalendář</span><span class="day-number">29</span><span>Čtvrtek</span></div>
+          <div class="preview-shortcuts"><span class="preview-label">Po ruce</span><span><b aria-hidden="true">▱</b> Soubory</span><span><b aria-hidden="true">↗</b> Zkratky</span></div>
+        </div>
+        <span class="preview-caption">Ilustrační uspořádání · ukázkové údaje</span>
+      </div>
+    </section>
+
+    <section class="intro-grid section-space" aria-labelledby="moznosti">
+      <div><p class="eyebrow">Přehled podle vás</p><h2 id="moznosti">Každá část dne<br>má své místo.</h2></div>
+      <div class="feature-list">
+        <article><span class="feature-number">01</span><div><h3>Vlastní plochy a widgety</h3><p>Oddělené pracovní a osobní plochy, barevná témata a widgety, které lze přidávat, přesouvat, seskupovat a měnit jejich velikost.</p></div></article>
+        <article><span class="feature-number">02</span><div><h3>Úkoly a plánování</h3><p>Místní seznamy i Google úkoly z více účtů. Přehled dneška, zítřka, úkolů po termínu a kalendář v pohledu den, týden a měsíc.</p></div></article>
+        <article><span class="feature-number">03</span><div><h3>Věci, které chcete mít po ruce</h3><p>Zkratky na soubory, složky, aplikace a weby, datum a čas nebo odpočet s potvrzovaným připomenutím.</p></div></article>
+      </div>
+    </section>
+
+    <section id="pripojeni" class="connections section-space" aria-labelledby="sluzby">
+      <div class="section-heading"><div><p class="eyebrow">Připojené služby</p><h2 id="sluzby">Vy rozhodujete, co připojíte.</h2></div><p>Připojení je volitelné. Přihlášení Google probíhá v prohlížeči a přístup se uděluje samostatně pro každý účet.</p></div>
+      <div class="service-row"><span class="service-symbol" aria-hidden="true">✓</span><div><h3>Google Tasks</h3><p>Čtení a správa seznamů a úkolů, včetně vytváření, úprav, dokončování a mazání. Podúkoly a vlastní pravidla opakování používají označený blok poznámek v Google úkolech.</p></div><span class="service-tag">Čtení a zápis</span></div>
+      <div class="service-row"><span class="service-symbol ocean" aria-hidden="true">▦</span><div><h3>Google Kalendář</h3><p>Volitelný přehled událostí v kalendáři aplikace. Aplikace čte názvy, časy, místa a odkazy na události; události Google Kalendáře neupravuje.</p></div><span class="service-tag">Jen čtení</span></div>
+      <div class="service-row"><span class="service-symbol ocean" aria-hidden="true">✉</span><div><h3>Klasický Outlook ve Windows</h3><p>Přehled e-mailů a schůzek prostřednictvím místního připojení COM. Výběr položky otevře originál v Outlooku, kde ji lze dále zpracovat.</p></div><span class="service-tag">Jen čtení</span></div>
+    </section>
+
+    <section class="cloud-note section-space" aria-labelledby="opakování">
+      <div class="cloud-icon" aria-hidden="true">↻</div><div><p class="eyebrow">Volitelná cloudová část</p><h2 id="opakování">Opakované úkoly i bez zapnutého PC.</h2><p>Vlastní opakování rodiče a podúkolů zajišťuje dodaný Google Apps Script. Po samostatné instalaci a autorizaci v každém účtu běží v prostředí Google s plánovaným intervalem pěti minut. Pravidla a vazby zůstávají v Google úkolech; další výskyty se načtou při obnovení aplikace.</p></div>
+    </section>
+
+    <section class="privacy-strip section-space" aria-labelledby="data">
+      <div><p class="eyebrow">Srozumitelná práce s daty</p><h2 id="data">Přehled o soukromí patří k aplikaci.</h2><p>Rozložení a poslední přehledy se ukládají lokálně. Google přihlášení chrání účet Windows. Cloudové opakování pracuje v prostředí Google. Tato informační stránka nemá přístup k vašemu dashboardu.</p></div><a class="button" href="privacy.html">Přečíst zásady soukromí <span aria-hidden="true">↗</span></a>
+    </section>
+    <aside class="project-note"><span class="note-mark" aria-hidden="true">i</span><p>Tento web představuje osobní projekt a vysvětluje jeho připojení ke službám. Aplikace se používá v samostatném desktopovém okně. Nejde o produkt společnosti Google ani Microsoft.</p></aside>
+  </main>
+  <footer class="site-footer wrap"><div class="footer-top"><a class="brand" href="index.html"><img src="favicon.svg" width="28" height="28" alt=""><span>Personal Dashboard</span></a><nav aria-label="Navigace v zápatí"><a href="index.html">O aplikaci</a><a href="privacy.html">Ochrana soukromí</a><a href="terms.html">Podmínky používání</a></nav></div><p class="contact">Pro dotazy k tomuto osobnímu projektu použijte podporu uvedenou na obrazovce souhlasu Google nebo kanál, kterým vám autor aplikaci předal.</p><p class="footer-meta">Osobní projekt · Informace aktualizovány 29. října 2026</p></footer>
+</body>
+</html>
